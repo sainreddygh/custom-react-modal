@@ -1,1 +1,3 @@
-export default function(){console.log("testing export")}
+export default class Testing {
+    check=function(){console.log("testing")}
+}
