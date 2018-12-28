@@ -1,4 +1,21 @@
 import React from "react";
+import PropTypes from 'prop-types';
+require('./css/index.less');
+import globalVariable from './constants/globalVariables.js';
+const defaultProps = globalVariable;
+const propTypes = {
+        backgroundStyle: PropTypes.object,
+        messageStyle: PropTypes.object,
+        removePreviewButtonStyle: PropTypes.object,
+        resetButton: PropTypes.object,
+        saveButton: PropTypes.object,
+        messageText: PropTypes.string,
+        resetText: PropTypes.string,
+        saveText: PropTypes.string,
+        closePreview: PropTypes.func,
+        resetFunction: PropTypes.func,
+        saveFunction: PropTypes.func,
+    };
 
 class CustomReactModal extends React.Component {   
     render() {
