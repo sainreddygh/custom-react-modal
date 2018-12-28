@@ -1,6 +1,6 @@
 import React from "react";
 
-class CustomReactModa extends React.Component {   
+class CustomReactModal extends React.Component {   
     render() {
         const props = this.props || {};
         let titleDiv = [];
@@ -28,4 +28,8 @@ class CustomReactModa extends React.Component {   
                 </div>
             ];
     }
-}
+} 
+CustomReactModal.propTypes = propTypes;
+CustomReactModal.defaultProps = defaultProps;
+ 
+export default CustomReactModal;
