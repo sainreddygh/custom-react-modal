@@ -1,3 +1,4 @@
-export default class Testing {
-    check=function(){console.log("testing")}
+const obj = {
+    name: "OBJECT"
 }
+export default obj;
