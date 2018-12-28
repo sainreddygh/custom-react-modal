@@ -1,0 +1,1 @@
+A simple React Component for a modal with custom attributes 
