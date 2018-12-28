@@ -1,0 +1,84 @@
+.blur-background{
+    position: fixed;
+    display: block;
+    background: black;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+  }
+  .preview-div{
+    width: 30%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    background: white;
+    left: 36%;
+    top: 40%;
+    font-size: 16px;
+    padding: 5px 5px 0px 5px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    .horizontal-line{
+      border-bottom: 1px solid #d4d4d4;
+    }
+    .message-text{
+      padding: 10px 0px;
+    }
+    .message-title{
+      padding: 5px 0px;
+      font-size: 20px;
+      color: red;
+    }
+    .cross-button{
+      cursor: pointer;
+      float: right;
+      position: absolute;
+      top: 4px;
+      right: 5px;
+      border-radius: 50%;
+      height: 18px;
+      width: 18px;
+    }
+    .cross-button:hover{
+      border: 1px solid #d4d4d4;
+      color: white;
+      background-color: #d4d4d4;
+    }
+    .footer-buttons{
+      display: flex;
+      height: 50px;
+      .button-style{
+        width: 100px;
+        line-height: 30px;
+        cursor: pointer;
+        margin: auto;
+        padding: 0px 10px;
+        border-radius: 20px;
+        color: white;
+      }
+      .reset-button{
+        background: lightcoral;
+      }
+      .save-button{
+        background: lightblue;
+      }
+      .reset-button:hover{
+        background: red;
+      }
+      .save-button:hover{
+        background: blue;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 724px) {
+      .preview-div{
+        left: 18%;
+        width: 60%;
+        min-width: 250px;
+      }
+  }
+  
